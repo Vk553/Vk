@@ -32,7 +32,7 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
-    opacity: 0.45;
+    opacity: 0.60; /* نسبة الشفافية للحصول على ألوان زاهية للصورة */
     z-index: -1;
     pointer-events: none;
   }
@@ -47,17 +47,18 @@
     font-size: 22px;
     font-weight: 700;
     margin: 0 0 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
   }
 
   #out {
     white-space: pre-wrap;
     font: 12px/1.45 Consolas, monospace;
-    background: rgba(17, 21, 27, 0.85);
-    border: 1px solid #1e2732;
-    border-radius: 5px;
-    padding: 10px 12px;
+    background: transparent; /* إزالة الطبقة السوداء تماماً */
+    border: none; /* إزالة الإطار الداكن */
+    padding: 10px 0;
     height: calc(100vh - 90px);
     overflow-y: auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9); /* ظل خلف النص لضمان المقروئية */
   }
 
   .ok { color: #7fd0a0; }

@@ -5,10 +5,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ps4 lapse</title>
 <style>
-  html, body {
+  html {
+    background: #0b0d10;
+  }
+
+  body {
     margin: 0;
     padding: 0;
-    background: #0b0d10;
+    background: transparent;
     color: #c8ced8;
     font: 15px/1.45 "Segoe UI", system-ui, sans-serif;
     min-height: 100vh;
@@ -20,15 +24,15 @@
   body::before {
     content: "";
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-image: url('bg.webp');
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: center bottom;
     background-size: cover;
-    opacity: 0.35;
+    opacity: 0.45;
     z-index: -1;
     pointer-events: none;
   }
@@ -52,7 +56,7 @@
     border: 1px solid #1e2732;
     border-radius: 5px;
     padding: 10px 12px;
-    height: calc(100vh - 90px); /* استغلال المساحة المتاحة بعد حذف الهيدر العلوي */
+    height: calc(100vh - 90px);
     overflow-y: auto;
   }
 
